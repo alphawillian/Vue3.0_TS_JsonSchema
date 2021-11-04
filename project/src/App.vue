@@ -1,18 +1,27 @@
+<!--
+ * @Author: willian126@126.com
+ * @Description: 文件描述
+ * @Date: 2021-11-04 13:55:27
+ * @LastEditors: willian126@126.com
+ * @LastEditTime: 2021-11-04 16:36:17
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" :age="12" />
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import { defineComponent } from 'vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default defineComponent({
-  name: "App",
+  name: 'App',
   components: {
     HelloWorld,
   },
-});
+})
 </script>
 
 <style lang="scss">
