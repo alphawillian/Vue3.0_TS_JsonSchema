@@ -3,11 +3,9 @@
  * @Description: 文件描述
  * @Date: 2021-11-04 17:38:52
  * @LastEditors: willian126@126.com
- * @LastEditTime: 2021-11-04 17:57:18
+ * @LastEditTime: 2021-11-09 17:32:29
  */
 import { createApp, defineComponent, h, createVNode, reactive, ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
-const img = require('./assets/logo.png') // eslint-disable-line
 
 export default defineComponent({
   setup() {
@@ -24,10 +22,8 @@ export default defineComponent({
       const number = numberRef.value
       return (
       <div id="app">
-        <img src={img} alt="vue logo"></img>
         <p>{state.name + number}</p>
         <input type="text" v-model={state.name} />
-        <HelloWorld age={1}></HelloWorld>
       </div>
       )
     }
